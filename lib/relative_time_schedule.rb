@@ -1,5 +1,3 @@
 require "relative_time_schedule/version"
 
-module RelativeTimeSchedule
-  # Your code goes here...
-end
+require "relative_time/schedule"

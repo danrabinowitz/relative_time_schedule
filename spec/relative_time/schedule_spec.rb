@@ -2,7 +2,10 @@ require 'spec_helper'
 
 describe RelativeTime::Schedule do
   describe ".new" do
-    let(:schedule_period) { SchedulePeriod.new }
+    let(:start) { RelativeTime::Weekly.new }
+    let(:endd) { RelativeTime::Weekly.new }
+
+    let(:schedule_period) { RelativeTime::SchedulePeriod.new(start, endd) }
     let(:schedule_periods) { Set[schedule_period] }
 
     it "does not require any arguments" do
